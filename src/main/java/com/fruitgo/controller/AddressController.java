@@ -15,7 +15,10 @@ import com.fruitgo.service.AddressService;
 
 @RestController
 @RequestMapping("/api/address")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://fruitgo-git-main-shaik-anwar-bashas-projects.vercel.app"
+})
 public class AddressController {
 
     @Autowired

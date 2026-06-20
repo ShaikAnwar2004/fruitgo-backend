@@ -11,11 +11,13 @@ import com.fruitgo.dto.LoginRequest;
 import com.fruitgo.dto.LoginResponse;
 import com.fruitgo.entity.User;
 import com.fruitgo.service.UserService;
-import com.fruitgo.dto.LoginResponse;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://fruitgo-git-main-shaik-anwar-bashas-projects.vercel.app"
+})
 public class UserController {
 
     @Autowired

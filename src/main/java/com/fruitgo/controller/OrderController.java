@@ -17,7 +17,10 @@ import com.fruitgo.service.OrderService;
 
 @RestController
 @RequestMapping("/api/orders")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://fruitgo-git-main-shaik-anwar-bashas-projects.vercel.app"
+})
 public class OrderController {
 
     @Autowired
