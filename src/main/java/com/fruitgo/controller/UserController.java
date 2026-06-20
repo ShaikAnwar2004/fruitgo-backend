@@ -1,7 +1,6 @@
 package com.fruitgo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +13,7 @@ import com.fruitgo.service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = {
-    "http://localhost:5173",
-    "https://fruitgo-git-main-shaik-anwar-bashas-projects.vercel.app"
-})
+
 public class UserController {
 
     @Autowired
